@@ -1,2 +1,6 @@
 ﻿  main.cpp
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(60,17): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(60,13): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(74,17): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(79,17): warning C4244:  'argument': conversion from 'double' to 'float', possible loss of data
   Breakout - PA9.vcxproj -> C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Debug\Breakout - PA9.exe

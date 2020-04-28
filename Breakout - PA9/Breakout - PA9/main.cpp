@@ -2,6 +2,12 @@
 
 int main(void)
 {
+	int score = 0;
+	double speed = 5;
+	double dx = 0;
+	double dy = 0;
+
+
 	//create window
 	sf::RenderWindow window(sf::VideoMode(700, 700), "Breakout!");
 	window.setFramerateLimit(60);
@@ -33,10 +39,44 @@ int main(void)
 		sf::Vector2f playerPos = player.getPosition();
 
 		//detect collisions
+		if (ballPos.x < 0) dx = speed;
+		else if (ballPos.x > 700 - 10) dx = -speed;
+		if (ballPos.y < 0) dy = speed;
+		else if (ballPos.y > 700 - 10)
+		{
+			dx = 0;
+			dy = 0;
+		}
+
+		if (ballPos.x >= playerPos.x && ballPos.x <= playerPos.x + 70)
+		{
+			if (ballPos.y >= playerPos.y - 10)
+			{
+				dy = -speed;
+			}
+		}
 
 		//move ball
+		ball.move(dx, dy);
 
 		//input detection
+			//release ball
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
+		{
+			dx = speed;
+			dy = speed;
+			score = 0;
+		}
+		
+			//move left
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+			if (playerPos.x > 0)
+				player.move(-speed, 0);
+		
+			//move right
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
+			if (playerPos.x < 700 - 70) // need to make this static varible
+				player.move(speed, 0);
 
 			//close window
 		sf::Event event;
@@ -50,6 +90,7 @@ int main(void)
 		window.clear();
 		window.draw(ball);
 		window.draw(player);
+		//draw text
 		window.display();
 
 
