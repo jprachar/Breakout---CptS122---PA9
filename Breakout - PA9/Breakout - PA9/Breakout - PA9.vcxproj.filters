@@ -44,5 +44,13 @@
     <ClInclude Include="Collisions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="libs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Roboto-Black.ttf">
+      <Filter>Resource Files</Filter>
+    </Font>
   </ItemGroup>
 </Project>

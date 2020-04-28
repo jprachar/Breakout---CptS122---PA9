@@ -146,7 +146,11 @@
     <ClInclude Include="Ball.h" />
     <ClInclude Include="Brick.h" />
     <ClInclude Include="Collisions.h" />
+    <ClInclude Include="libs.h" />
     <ClInclude Include="Paddle.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Roboto-Black.ttf" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
