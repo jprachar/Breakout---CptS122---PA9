@@ -140,6 +140,7 @@
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C;\SFML-2.5.1\include</AdditionalIncludeDirectories>
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C;\SFML-2.5.1\include</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Paddle.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -147,6 +148,7 @@
     <ClInclude Include="Brick.h" />
     <ClInclude Include="Collisions.h" />
     <ClInclude Include="libs.h" />
+    <ClInclude Include="Menu.h" />
     <ClInclude Include="Paddle.h" />
   </ItemGroup>
   <ItemGroup>
