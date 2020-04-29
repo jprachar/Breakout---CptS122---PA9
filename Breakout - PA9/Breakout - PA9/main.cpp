@@ -1,4 +1,5 @@
 #include "libs.h"
+#include "Brick.h"
 
 int main(void)
 {
@@ -87,8 +88,15 @@ int main(void)
 		player.setFillColor(sf::Color::White);
 		player.setPosition(322, 656);
 
+		std::vector<Brick> bricks;
 
-
+		for (int iX{ 0 }; iX < 6; ++iX)
+		{
+			for (int iY{ 0 }; iY < 4; ++iY)
+			{
+				bricks.emplace_back((iX + 1) * (100 + 10) + 20, (iY + 2) * (25 + 3));
+			}
+		}
 
 		//sf::CircleShape shape(100.f);
 		//shape.setFillColor(sf::Color::Green);
@@ -110,9 +118,15 @@ int main(void)
 
 			if (ballPos.x >= playerPos.x && ballPos.x <= playerPos.x + 70)
 			{
-				if (ballPos.y >= playerPos.y - 10)
+				if (ballPos.y >= playerPos.y - 10 && ballPos.x < playerPos.x + 35)
 				{
 					dy = -speed;
+					dx = -speed;
+				}
+				else if (ballPos.y >= playerPos.y - 10 && ballPos.x <= playerPos.x + 70)
+				{
+					dy = -speed;
+					dx = speed;
 				}
 			}
 
@@ -150,6 +164,10 @@ int main(void)
 			window.clear();
 			window.draw(ball);
 			window.draw(player);
+			for (auto& brick : bricks)
+			{
+				window.draw(brick.shape);
+			}
 			//draw text
 			window.display();
 
