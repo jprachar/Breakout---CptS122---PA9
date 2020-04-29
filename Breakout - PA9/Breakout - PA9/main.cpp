@@ -14,6 +14,11 @@ int main(void)
 	sf::RenderWindow window(sf::VideoMode(700, 700), "Breakout!         Hint: Use the arrow keys");
 	window.setFramerateLimit(60);
 
+	//creat font
+	sf::Font font;
+	font.loadFromFile("Roboto-Black.ttf");
+	sf::Text rules;
+
 	//create menu
 	Menu menu(window.getSize().x, window.getSize().y);
 	while (window.isOpen() && menu_option == 0)
@@ -45,6 +50,43 @@ int main(void)
 					case 1:
 						menu_option = SEE_RULES;
 						std::cout << "Show Rules button has been pressed" << std::endl;
+						if (menu_option == SEE_RULES)
+						{
+							while (window.isOpen())
+							{
+								rules.setFont(font);
+								rules.setString("Smash all the blocks!\n"
+									"[space] to launch the ball\n"
+									"Arrow keys to move your paddle\n\n"
+									"Each Ball brick collision causes 1 pt health damage to bricks\n"
+									"Green Bricks = 1 hp\n"
+									"Blue Bricks  = 2 hp\n"
+									"Red Bricks   = 3 hp\n\n\n"
+									"Press Escape to go back to menu");
+
+								//if enter
+								if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
+								{
+									menu_option = 0;
+									break;
+								}
+
+
+								//close window
+								sf::Event event;
+								while (window.pollEvent(event))
+								{
+									if (event.type == sf::Event::Closed)
+										window.close();
+								}
+
+								//render
+								window.clear();
+								window.draw(rules);
+								window.display();
+							}
+						}
+						break;
 						break;
 					case 2:
 						window.close();
@@ -71,9 +113,6 @@ int main(void)
 	}
 
 
-	//creat font
-	sf::Font font;
-	font.loadFromFile("Roboto-Black.ttf");
 
 	//play game
 	if (menu_option == PLAY)
