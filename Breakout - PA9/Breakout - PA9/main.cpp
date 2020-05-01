@@ -1,5 +1,8 @@
 #include "libs.h"
 #include "Brick.h"
+#include "Ball.h"
+#include "Collisions.h"
+#include "Paddle.h"
 
 int main(void)
 {
@@ -118,14 +121,10 @@ int main(void)
 	if (menu_option == PLAY)
 	{
 		//create ball shape
-		sf::CircleShape ball(7.f);
-		ball.setFillColor(sf::Color::Green);
-		ball.setPosition(350, 640);
+		Ball ball{ 800 / 2 , 700 / 2 };
 
 		//create paddle shape
-		sf::RectangleShape player(sf::Vector2f(70, 10));
-		player.setFillColor(sf::Color::White);
-		player.setPosition(322, 656);
+		Paddle player{ 350, 656 };
 
 		std::vector<Brick> bricks;
 
@@ -142,56 +141,43 @@ int main(void)
 
 		while (window.isOpen())
 		{
-			sf::Vector2f ballPos = ball.getPosition();
-			sf::Vector2f playerPos = player.getPosition();
 
-			//detect collisions
-			if (ballPos.x < 0) dx = speed;
-			else if (ballPos.x > 700 - 10) dx = -speed;
-			if (ballPos.y < 0) dy = speed;
-			else if (ballPos.y > 700 - 10)
+			//detect Ball/Paddle collision
+			if (Intersecting(ball, player))
 			{
-				dx = 0;
-				dy = 0;
-			}
+					ball.velocity.y = -speed;
 
-			if (ballPos.x >= playerPos.x && ballPos.x <= playerPos.x + 70)
-			{
-				if (ballPos.y >= playerPos.y - 10 && ballPos.x < playerPos.x + 35)
+				if (ball.x() < player.x())
 				{
-					dy = -speed;
-					dx = -speed;
+					ball.velocity.x = -speed;
 				}
-				else if (ballPos.y >= playerPos.y - 10 && ballPos.x <= playerPos.x + 70)
+				else
 				{
-					dy = -speed;
-					dx = speed;
+					ball.velocity.x = speed;
 				}
 			}
 
-			//move ball
-			ball.move(dx, dy);
+			//detect Ball/Brick collision
+			for (auto& brick : bricks)
+			{
+				if (Intersecting(brick, ball))
+					Collision(brick, ball);
+			};
+
+			//move objects
+			ball.update();
+			player.update();
 
 			//input detection
 				//release ball
 			if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
 			{
-				dx = speed;
-				dy = speed;
+				ball.velocity.x = speed;
+				ball.velocity.y = speed;
 				score = 0;
 			}
 
-			//move left
-			if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
-				if (playerPos.x > 0)
-					player.move(-speed, 0);
-
-			//move right
-			if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
-				if (playerPos.x < 700 - 70) // need to make this static varible
-					player.move(speed, 0);
-
-			//close window
+				//close window
 			sf::Event event;
 			while (window.pollEvent(event))
 			{
@@ -199,16 +185,21 @@ int main(void)
 					window.close();
 			}
 
+			bricks.erase(std::remove_if(begin(bricks), end(bricks), [](const Brick& Brick) {return Brick.destroyed; }), end(bricks));
+
 			//render
 			window.clear();
-			window.draw(ball);
-			window.draw(player);
+			window.draw(ball.shape);
+			window.draw(player.shape);
 			for (auto& brick : bricks)
 			{
 				window.draw(brick.shape);
 			}
+
 			//draw text
 			window.display();
+
+
 
 		}
 	}
