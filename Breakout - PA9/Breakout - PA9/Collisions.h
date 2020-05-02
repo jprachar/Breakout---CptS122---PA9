@@ -28,4 +28,13 @@ void Collision(Brick& Brick,  Ball& Ball)
 	{
 		Ball.velocity.y = BallTop ? -5 : 5;
 	}
+	
+	if (Brick.Armor == 0)
+	{
+		Brick.shape.setFillColor(sf::Color::Blue);
+	}
+	else if (Brick.Armor == 1)
+	{
+		Brick.shape.setFillColor(sf::Color::Green);
+	}
 }
