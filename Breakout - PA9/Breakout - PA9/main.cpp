@@ -1,9 +1,10 @@
 #include "libs.h"
 #include "Ball.h"
-#include "Brick\Rectangles.h"
+#include "Brick.h"
 #include "Collisions.h"
 #include "Paddle.h"
 #include "Score.h"
+#include <time.h>
 
 int main(void)
 {

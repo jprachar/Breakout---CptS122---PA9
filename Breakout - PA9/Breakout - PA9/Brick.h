@@ -1,16 +1,36 @@
-#include "libs.h"
-
 class Brick
 {
 public:
 	sf::RectangleShape shape;
 	bool destroyed{ false };
+	int Armor = 0;
 	Brick(float x, float y)
 	{
-		shape.setPosition(x, y);
-		shape.setSize(sf::Vector2f(100.f, 25.f));
-		shape.setFillColor(sf::Color::Blue);
-		shape.setOrigin(sf::Vector2f(100 / 2, 50 / 2));
+		int check = rand() % 3 + 1;
+
+		if (check == 1)
+		{
+			shape.setPosition(x, y);
+			shape.setSize(sf::Vector2f(100.f, 25.f));
+			shape.setFillColor(sf::Color::Blue);
+			shape.setOrigin(sf::Vector2f(100 / 2, 50 / 2));
+		}
+		else if (check == 2)
+		{
+			shape.setPosition(x, y);
+			shape.setSize(sf::Vector2f(100.f, 25.f));
+			shape.setFillColor(sf::Color::Green);
+			shape.setOrigin(sf::Vector2f(100 / 2, 50 / 2));
+			Armor = 1;
+		}
+		else
+		{
+			shape.setPosition(x, y);
+			shape.setSize(sf::Vector2f(100.f, 25.f));
+			shape.setFillColor(sf::Color::Red);
+			shape.setOrigin(sf::Vector2f(100 / 2, 50 / 2));
+			Armor = 2;
+		}
 	}
 
 	float x() { return shape.getPosition().x; };
@@ -37,12 +57,12 @@ public:
 
 	void update() {
 		shape.move(velocity);
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left) && left() > 0)
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) && left() > 0)
 		{
 			velocity.x = -8;
 
 		}
-		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right) && right() < 800)
+		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) && right() < 800)
 			velocity.x = 8;
 		else
 			velocity.x = 0;
