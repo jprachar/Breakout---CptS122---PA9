@@ -1,8 +1,9 @@
 #include "libs.h"
-#include "Brick.h"
 #include "Ball.h"
+#include "Brick\Rectangles.h"
 #include "Collisions.h"
 #include "Paddle.h"
+#include "Score.h"
 
 int main(void)
 {
@@ -21,6 +22,7 @@ int main(void)
 	sf::Font font;
 	font.loadFromFile("Roboto-Black.ttf");
 	sf::Text rules;
+	sf::Text Score;
 
 	//create menu
 	Menu menu(window.getSize().x, window.getSize().y);
@@ -191,22 +193,23 @@ int main(void)
 			window.clear();
 			window.draw(ball.shape);
 			window.draw(player.shape);
+			Score.setFont(font);
+			Score.setString(std::to_string(score));
+			Score.setCharacterSize(24);
+			Score.setFillColor(sf::Color::Yellow);
 			for (auto& brick : bricks)
 			{
 				window.draw(brick.shape);
 			}
 
 			//draw text
+			window.draw(Score);
 			window.display();
-
-
-
 		}
 	}
 
-
-
-	
+	//Write Score to File
+	Score1 Writescore(score);
 
 	return 0;
 }

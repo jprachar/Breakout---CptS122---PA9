@@ -142,6 +142,7 @@
     </ClCompile>
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Paddle.cpp" />
+    <ClCompile Include="Score.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Ball.h" />
@@ -150,9 +151,13 @@
     <ClInclude Include="libs.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="Paddle.h" />
+    <ClInclude Include="Score.h" />
   </ItemGroup>
   <ItemGroup>
     <Font Include="Roboto-Black.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Score.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
