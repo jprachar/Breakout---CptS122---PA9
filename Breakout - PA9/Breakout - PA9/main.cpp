@@ -163,7 +163,10 @@ int main(void)
 			for (auto& brick : bricks)
 			{
 				if (Intersecting(brick, ball))
+				{
 					Collision(brick, ball);
+					score++;
+				}
 			};
 
 			//move objects

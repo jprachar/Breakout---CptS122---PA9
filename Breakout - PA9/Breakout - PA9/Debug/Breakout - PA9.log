@@ -34,12 +34,12 @@ C:\Users\Michael\Desktop\School\Cpts\Breakout---CptS122---PA9\Breakout - PA9\Bre
           [
               T=float
           ]
-C:\Users\Michael\Desktop\School\Cpts\Breakout---CptS122---PA9\Breakout - PA9\Breakout - PA9\main.cpp(177,23): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+C:\Users\Michael\Desktop\School\Cpts\Breakout---CptS122---PA9\Breakout - PA9\Breakout - PA9\main.cpp(180,23): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Users\Michael\Desktop\School\Cpts\Breakout---CptS122---PA9\Breakout - PA9\Breakout - PA9\main.cpp(178,23): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+C:\Users\Michael\Desktop\School\Cpts\Breakout---CptS122---PA9\Breakout - PA9\Breakout - PA9\main.cpp(181,23): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
           with
           [
               T=float
