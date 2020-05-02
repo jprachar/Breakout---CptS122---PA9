@@ -15,6 +15,7 @@ public:
 	float right() { return x() + shape.getSize().x / 2.f; };
 	float top() { return y() - shape.getSize().y / 2.f; };
 	float bottom() { return y() + shape.getSize().y / 2.f; };
+	//virtual bool collide(RectangleBase& rect);
 };
 
 class Brick : public RectangleBase
@@ -60,12 +61,12 @@ public:
 
 	void update() {
 		shape.move(velocity);
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) && left() > 0)
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left) && left() > 0)
 		{
 			velocity.x = -8;
 
 		}
-		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) && right() < 800)
+		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right) && right() < 800)
 			velocity.x = 8;
 		else
 			velocity.x = 0;
