@@ -15,7 +15,7 @@ int main(void)
 	int menu_option = 0;
 
 	//create window
-	sf::RenderWindow window(sf::VideoMode(700, 700), "Breakout!         Hint: Use the arrow keys");
+	sf::RenderWindow window(sf::VideoMode(800, 700), "Breakout!         Hint: Use the arrow keys");
 	window.setFramerateLimit(60);
 
 	//creat font
