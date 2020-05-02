@@ -7,6 +7,8 @@
 
 int main(void)
 {
+	int isVictory = 0;
+	int isLost = 0;
 	int score = 0;
 	double speed = 5;
 	double dx = 0;
@@ -205,9 +207,52 @@ int main(void)
 				window.draw(brick.shape);
 			}
 
+			//victory
+			if (bricks.empty())// all brick been smashed
+			{
+				isVictory = 1;
+				break;
+			}
+
+			//you loose
+			if (ball.y() > player.y() + 11)
+			{
+				isLost = 1;
+				break;
+			}
+
 			//draw text
 			window.draw(Score);
 			window.display();
+		}
+
+		//goes into via flag
+		if (isVictory)
+		{
+			sf::Text victory;
+			victory.setFont(font);
+			victory.setCharacterSize(100);
+			victory.setString("You WIN");
+			victory.setFillColor(sf::Color::Green);
+			window.clear();
+			window.draw(victory);
+			window.display();
+			Sleep(3000);
+			window.close();
+		}
+
+		if (isLost)
+		{
+			sf::Text lost;
+			lost.setFont(font);
+			lost.setCharacterSize(100);
+			lost.setString("You LOSE");
+			lost.setFillColor(sf::Color::Red);
+			window.clear();
+			window.draw(lost);
+			window.display();
+			Sleep(3000);
+			window.close();
 		}
 	}
 
