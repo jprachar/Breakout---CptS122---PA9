@@ -1,49 +1,49 @@
 ﻿  main.cpp
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\Collisions.h(25,21): warning C4244:  '=': conversion from 'int' to 'T', possible loss of data
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\Collisions.h(25,21): warning C4244:         with
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\Collisions.h(25,21): warning C4244:         [
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\Collisions.h(25,21): warning C4244:             T=float
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\Collisions.h(25,21): warning C4244:         ]
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\Collisions.h(29,21): warning C4244:  '=': conversion from 'int' to 'T', possible loss of data
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\Collisions.h(29,21): warning C4244:         with
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\Collisions.h(29,21): warning C4244:         [
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\Collisions.h(29,21): warning C4244:             T=float
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\Collisions.h(29,21): warning C4244:         ]
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(30,48): warning C4244:  'argument': conversion from 'T' to 'float', possible loss of data
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(30,48): warning C4244:         with
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(30,48): warning C4244:         [
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(30,48): warning C4244:             T=unsigned int
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(30,48): warning C4244:         ]
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(30,28): warning C4244:  'argument': conversion from 'T' to 'float', possible loss of data
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(30,28): warning C4244:         with
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(30,28): warning C4244:         [
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(30,28): warning C4244:             T=unsigned int
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(30,28): warning C4244:         ]
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(152,24): warning C4244:  '=': conversion from 'double' to 'T', possible loss of data
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(152,24): warning C4244:         with
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(152,24): warning C4244:         [
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(152,24): warning C4244:             T=float
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(152,24): warning C4244:         ]
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(156,24): warning C4244:  '=': conversion from 'double' to 'T', possible loss of data
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(156,24): warning C4244:         with
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(156,24): warning C4244:         [
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(156,24): warning C4244:             T=float
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(156,24): warning C4244:         ]
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(160,24): warning C4244:  '=': conversion from 'double' to 'T', possible loss of data
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(160,24): warning C4244:         with
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(160,24): warning C4244:         [
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(160,24): warning C4244:             T=float
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(160,24): warning C4244:         ]
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(182,23): warning C4244:  '=': conversion from 'double' to 'T', possible loss of data
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(182,23): warning C4244:         with
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(182,23): warning C4244:         [
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(182,23): warning C4244:             T=float
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(182,23): warning C4244:         ]
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\Collisions.h(32,21): warning C4244:  '=': conversion from 'int' to 'T', possible loss of data
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\Collisions.h(32,21): warning C4244:         with
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\Collisions.h(32,21): warning C4244:         [
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\Collisions.h(32,21): warning C4244:             T=float
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\Collisions.h(32,21): warning C4244:         ]
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\Collisions.h(36,21): warning C4244:  '=': conversion from 'int' to 'T', possible loss of data
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\Collisions.h(36,21): warning C4244:         with
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\Collisions.h(36,21): warning C4244:         [
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\Collisions.h(36,21): warning C4244:             T=float
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\Collisions.h(36,21): warning C4244:         ]
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(31,48): warning C4244:  'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(31,48): warning C4244:         with
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(31,48): warning C4244:         [
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(31,48): warning C4244:             T=unsigned int
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(31,48): warning C4244:         ]
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(31,28): warning C4244:  'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(31,28): warning C4244:         with
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(31,28): warning C4244:         [
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(31,28): warning C4244:             T=unsigned int
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(31,28): warning C4244:         ]
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(153,24): warning C4244:  '=': conversion from 'double' to 'T', possible loss of data
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(153,24): warning C4244:         with
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(153,24): warning C4244:         [
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(153,24): warning C4244:             T=float
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(153,24): warning C4244:         ]
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(157,24): warning C4244:  '=': conversion from 'double' to 'T', possible loss of data
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(157,24): warning C4244:         with
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(157,24): warning C4244:         [
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(157,24): warning C4244:             T=float
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(157,24): warning C4244:         ]
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(161,24): warning C4244:  '=': conversion from 'double' to 'T', possible loss of data
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(161,24): warning C4244:         with
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(161,24): warning C4244:         [
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(161,24): warning C4244:             T=float
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(161,24): warning C4244:         ]
 C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(183,23): warning C4244:  '=': conversion from 'double' to 'T', possible loss of data
 C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(183,23): warning C4244:         with
 C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(183,23): warning C4244:         [
 C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(183,23): warning C4244:             T=float
 C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(183,23): warning C4244:         ]
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(184,23): warning C4244:  '=': conversion from 'double' to 'T', possible loss of data
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(184,23): warning C4244:         with
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(184,23): warning C4244:         [
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(184,23): warning C4244:             T=float
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(184,23): warning C4244:         ]
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xmemory(761,103): warning C4244:  'argument': conversion from '_Ty' to 'float', possible loss of data
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xmemory(761,103): warning C4244:         with
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\xmemory(761,103): warning C4244:         [
@@ -68,9 +68,9 @@ C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.2
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\vector(653): message :         [
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\vector(653): message :             _Ty=Brick
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\vector(653): message :         ]
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(139): message :  see reference to function template instantiation 'void std::vector<Brick,std::allocator<_Ty>>::emplace_back<int,int>(int &&,int &&)' being compiled
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(139): message :         with
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(139): message :         [
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(139): message :             _Ty=Brick
-C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(139): message :         ]
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(140): message :  see reference to function template instantiation 'void std::vector<Brick,std::allocator<_Ty>>::emplace_back<int,int>(int &&,int &&)' being compiled
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(140): message :         with
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(140): message :         [
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(140): message :             _Ty=Brick
+C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Breakout - PA9\main.cpp(140): message :         ]
   Breakout - PA9.vcxproj -> C:\Users\Justin\Documents\CPTS 122\PA09 - FINAL - Breakout\Program\Breakout - PA9\Debug\Breakout - PA9.exe

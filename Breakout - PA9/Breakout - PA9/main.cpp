@@ -67,8 +67,8 @@ int main(void)
 									"[space] to launch the ball\n"
 									"Arrow keys to move your paddle\n\n"
 									"Each Ball brick collision causes 1 pt health damage to bricks\n"
-									"Green Bricks = 1 hp\n"
-									"Blue Bricks  = 2 hp\n"
+									"Blue Bricks = 1 hp\n"
+									"Green Bricks  = 2 hp\n"
 									"Red Bricks   = 3 hp\n\n\n"
 									"Press Escape to go back to menu");
 
