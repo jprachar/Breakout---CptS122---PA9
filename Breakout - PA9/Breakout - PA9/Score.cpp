@@ -3,8 +3,13 @@
 
 Score1::Score1(int number)
 {
-    std::fstream file("Score.txt");
+	std::cout << "Enter a name for your score..." << std::endl;
+	std::string name;
+	std::getline(std::cin, name);
 
-    file << number;
+	std::ofstream file;
+	file.open("Score.txt", std::ios::app);
+
+    file << name << " " << number << std::endl;
     file.close();
 }
