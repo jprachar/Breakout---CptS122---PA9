@@ -4,6 +4,7 @@
 #include "Collisions.h"
 #include "Paddle.h"
 #include "Score.h"
+#include <time.h>
 
 int main(void)
 {
